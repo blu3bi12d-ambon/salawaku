@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='shortcut icon' href="https://i.imgur.com/ry7PW5j.png">
+  <script language='JavaScript'>
+      var txt="~ Hacked By Salawaku BlackHat ~";
+      alert("<.> ( Hacked By. W4el ) </.>");
+      alert("<.> ( SALAWAKU BLACKHAT ) </.>");
+      var speed=300;
+      var refresh=null;
+      function action() { document.title=txt;
+      txt=txt.substring(1,txt.length)+txt.charAt(0);
+      refresh=setTimeout("action()",speed);}action();
+  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://www.script-tutorials.com/demos/360/style.css">
+<style>
+/* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+html {
+  height: 100%;
+}
+
+body {
+  background: #0D343A;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(13, 52, 58, 1)), to(#000000));
+  background: -moz-linear-gradient(top, rgba(13, 52, 58, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  overflow: hidden;
+}
+.drop {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(13, 52, 58, 1)), to(rgba(255, 255, 255, 0.6)));
+  background: -moz-linear-gradient(top, rgba(13, 52, 58, 1) 0%, rgba(255, 255, 255, .6) 100%);
+  width: 1px;
+  height: 89px;
+  position: absolute;
+  bottom: 200px;
+  -webkit-animation: fall .63s linear infinite;
+  -moz-animation: fall .63s linear infinite;
+}
+
+
+/* animate the drops*/
+
+@-webkit-keyframes fall {
+  to {
+    margin-top: 900px;
+  }
+}
+
+@-moz-keyframes fall {
+  to {
+    margin-top: 900px;
+  }
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #080000;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: bold;
+  font-size: 50px;
+  color: #fafafa;
+}
+.dud {
+  color: rgb(18, 218, 11);
+}
+</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <audio src="http://lagump3gratis.biz/download-mp3/445751046/BTS-FAKE-LOVE" autoplay="autoplay" hidden="hidden"></audio>
+</head>
+<body>
+<section class="rain"></section>
+  <div class="container">
+      <div class="clouds"></div>
+  <div class="text"></div>
+</div>
+<script type="text/javascript">
+      var _createClass = function () {function defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}return function (Constructor, protoProps, staticProps) {if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;};}();function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}} // ——————————————————————————————————————————————————
+      // TextScramble
+      // ——————————————————————————————————————————————————
+      var
+      TextScramble = function () {
+        function TextScramble(el) {_classCallCheck(this, TextScramble);
+          this.el = el;
+          this.chars = '!<>-_\\%^$)(~/[]{}—=+*^?#________';
+          this.update = this.update.bind(this);
+        }_createClass(TextScramble, [{ key: 'setText', value: function setText(
+          newText) {var _this = this;
+            var oldText = this.el.innerText;
+            var length = Math.max(oldText.length, newText.length);
+            var promise = new Promise(function (resolve) {return _this.resolve = resolve;});
+            this.queue = [];
+            for (var i = 0; i < length; i++) {
+              var from = oldText[i] || '';
+              var to = newText[i] || '';
+              var start = Math.floor(Math.random() * 40);
+              var end = start + Math.floor(Math.random() * 40);
+              this.queue.push({ from: from, to: to, start: start, end: end });
+            }
+            cancelAnimationFrame(this.frameRequest);
+            this.frame = 0;
+            this.update();
+            return promise;
+          } }, { key: 'update', value: function update()
+          {
+            var output = '';
+            var complete = 0;
+            for (var i = 0, n = this.queue.length; i < n; i++) {var _queue$i =
+              this.queue[i],from = _queue$i.from,to = _queue$i.to,start = _queue$i.start,end = _queue$i.end,char = _queue$i.char;
+              if (this.frame >= end) {
+                complete++;
+                output += to;
+              } else if (this.frame >= start) {
+                if (!char || Math.random() < 0.28) {
+                  char = this.randomChar();
+                  this.queue[i].char = char;
+                }
+                output += '<span class="dud">' + char + '</span>';
+              } else {
+                output += from;
+              }
+            }
+            this.el.innerHTML = output;
+            if (complete === this.queue.length) {
+              this.resolve();
+            } else {
+              this.frameRequest = requestAnimationFrame(this.update);
+              this.frame++;
+            }
+          } }, { key: 'randomChar', value: function randomChar()
+          {
+            return this.chars[Math.floor(Math.random() * this.chars.length)];
+          } }]);return TextScramble;}();
+      
+      
+      // ——————————————————————————————————————————————————
+      // Example
+      // ——————————————————————————————————————————————————
+      
+      var phrases = [
+      'Hacked By W4el',
+      'Team S.B.H',
+      'Salawaku BlackHat',
+      'System Tidak Aman'];
+      
+      
+      var el = document.querySelector('.text');
+      var fx = new TextScramble(el);
+      
+      var counter = 0;
+      var next = function next() {
+        fx.setText(phrases[counter]).then(function () {
+          setTimeout(next, 800);
+        });
+        counter = (counter + 1) % phrases.length;
+      };
+      
+      next();
+</script>
+<script>
+  (function() {
+  'use strict';
+
+  function getRandomNumberInRange(minimum, maximum) {
+    return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+  }
+
+  function createRain(numberOfDrops) {
+    numberOfDrops = numberOfDrops || 1000;
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+
+    var rainDrops = '';
+    for (var i = 0; i < numberOfDrops; i++) {
+      var dropLeft = getRandomNumberInRange(0, windowWidth);
+      var dropTop = getRandomNumberInRange(-1000, windowHeight);
+
+      rainDrops += '<div class="drop" style="left: ' + dropLeft + 'px; top: ' + dropTop + 'px;"></div>';
+    }
+
+    document.querySelector('.rain').innerHTML = rainDrops;
+  }
+
+  createRain(250);
+}());
+</script>
+<script src="http://www.script-tutorials.com/assets/ads.js" async></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+<!-- mematikan fungsi klik kanan -->
+<script type="text/javascript">
+  function mousedwn(e) {
+      try {
+          if (event.button == 2 || event.button == 3) return false
+      } catch (e) {
+          if (e.which == 3) return false
+      }
+  }
+  document.oncontextmenu = function() {
+      return false
+  };
+  document.ondragstart = function() {
+      return false
+  };
+  document.onmousedown = mousedwn
+</script>
+
+<!-- mencegah shorcut keyboard, view source dll. -->
+<script type="text/javascript">
+  window.addEventListener("keydown", function(e) {
+      if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {
+          e.preventDefault()
+      }
+  });
+  document.keypress = function(e) {
+      if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {}
+      return false
+  }
+</script>
+</body>
+
+</html>
