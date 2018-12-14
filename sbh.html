@@ -1,23 +1,34 @@
-<!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <link rel='shortcut icon' href="https://i.imgur.com/ry7PW5j.png">
-  <script language='JavaScript'>
-      var txt="~ Hacked By Salawaku BlackHat ~";
-      alert("<.> ( Hacked By. W4el ) </.>");
-      alert("<.> ( SALAWAKU BLACKHAT ) </.>");
-      var speed=300;
-      var refresh=null;
-      function action() { document.title=txt;
-      txt=txt.substring(1,txt.length)+txt.charAt(0);
-      refresh=setTimeout("action()",speed);}action();
-  </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="https://www.script-tutorials.com/demos/360/style.css">
+<link rel='shortcut icon' href="https://i.imgur.com/iekvLZx.png">
+<script language='JavaScript'>
+    var txt="~ Hacked By : W4el-./PejuangS.Pi-Prof.Nub ~";
+    alert("<.> ( Hacked By. SALAWAKU BLACKHAT ) </.>");
+    var speed=300;
+    var refresh=null;
+    function action() { document.title=txt;
+    txt=txt.substring(1,txt.length)+txt.charAt(0);
+    refresh=setTimeout("action()",speed);}action();
+</script>
 <style>
-/* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+#content {
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  position: relative;
+  width: 85%;
+  height: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* GLOBAL STYLES */
+body {
+    background: rgb(164, 191, 226);
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+  }
+
 html {
   height: 100%;
 }
@@ -53,122 +64,194 @@ body {
     margin-top: 900px;
   }
 }
+  
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  .typewriter h3 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(115, 228, 162); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: ; /* Adjust as needed */
+    animation: 
+      typing 0.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
 
-body {
-  font-family: 'Roboto Mono', monospace;
-  background: #080000;
-  height: 100%;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
-.container {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
-.text {
-  font-weight: bold;
-  font-size: 50px;
-  color: #fafafa;
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(30deg);
+    }
 }
-.dud {
-  color: rgb(18, 218, 11);
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(30deg);
+    }
+}
+
+#dumetschool {
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-play-state: running;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-aniamtion-timing-function: linear;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-play-state: running;
+
+    -moz-animation-name: spin;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 5s;
+    -moz-animation-play-state: running;
+}
+
+/* Make it a marquee */
+.marquee {
+    width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 50s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
+
+/* Make it pretty */
+.microsoft {
+    padding-left: 1.5em;
+    position: relative;
+    font: 16px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+/* ::before was :before before ::before was ::before - kthx */
+.microsoft:before, .microsoft::before {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    top: -1em; left: -1em;
+    width: .5em; height: .5em;
+    box-shadow: 1.0em 1.25em 0 rgb(245, 156, 200),
+        		1.6em 1.25em 0 rgb(245, 156, 200),
+        		1.0em 1.85em 0 rgb(245, 156, 200),
+        		1.6em 1.85em 0 rgb(245, 156, 200);
+}
+
+.microsoft:after, .microsoft::after {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 2em; height: 2em;
+    background-image: linear-gradient(90deg, white 70%, rgba(255,255,255,0));
+}
+
+/* Style the links */
+.vanity {
+    color: #333;
+    text-align: center;
+    font: .75em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+.vanity a, .microsoft a {
+    color: rgb(21, 166, 52);
+    transition: color .5s;
+    text-decoration: none;
+}
+
+.vanity a:hover, .microsoft a:hover {
+    color: #F65314;
+}
+
+/* Style toggle button */
+.toggle {
+	display: block;
+    margin: 2em auto;
 }
 </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <audio src="http://lagump3gratis.biz/download-mp3/445751046/BTS-FAKE-LOVE" autoplay="autoplay" hidden="hidden"></audio>
+<audio src="http://lagump3gratis.biz/download-mp3/445751046/BTS-FAKE-LOVE" autoplay="autoplay" hidden="hidden"></audio>
 </head>
 <body>
 <section class="rain"></section>
-  <div class="container">
-      <div class="clouds"></div>
-  <div class="text"></div>
+<center>
+<div class="typewriter">
+    <h1>~ SALAWAKU BLACKHAT ~</h1>
 </div>
-<script type="text/javascript">
-      var _createClass = function () {function defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}return function (Constructor, protoProps, staticProps) {if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;};}();function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}} // ——————————————————————————————————————————————————
-      // TextScramble
-      // ——————————————————————————————————————————————————
-      var
-      TextScramble = function () {
-        function TextScramble(el) {_classCallCheck(this, TextScramble);
-          this.el = el;
-          this.chars = '!<>-_\\%^$)(~/[]{}—=+*^?#________';
-          this.update = this.update.bind(this);
-        }_createClass(TextScramble, [{ key: 'setText', value: function setText(
-          newText) {var _this = this;
-            var oldText = this.el.innerText;
-            var length = Math.max(oldText.length, newText.length);
-            var promise = new Promise(function (resolve) {return _this.resolve = resolve;});
-            this.queue = [];
-            for (var i = 0; i < length; i++) {
-              var from = oldText[i] || '';
-              var to = newText[i] || '';
-              var start = Math.floor(Math.random() * 40);
-              var end = start + Math.floor(Math.random() * 40);
-              this.queue.push({ from: from, to: to, start: start, end: end });
-            }
-            cancelAnimationFrame(this.frameRequest);
-            this.frame = 0;
-            this.update();
-            return promise;
-          } }, { key: 'update', value: function update()
-          {
-            var output = '';
-            var complete = 0;
-            for (var i = 0, n = this.queue.length; i < n; i++) {var _queue$i =
-              this.queue[i],from = _queue$i.from,to = _queue$i.to,start = _queue$i.start,end = _queue$i.end,char = _queue$i.char;
-              if (this.frame >= end) {
-                complete++;
-                output += to;
-              } else if (this.frame >= start) {
-                if (!char || Math.random() < 0.28) {
-                  char = this.randomChar();
-                  this.queue[i].char = char;
-                }
-                output += '<span class="dud">' + char + '</span>';
-              } else {
-                output += from;
-              }
-            }
-            this.el.innerHTML = output;
-            if (complete === this.queue.length) {
-              this.resolve();
-            } else {
-              this.frameRequest = requestAnimationFrame(this.update);
-              this.frame++;
-            }
-          } }, { key: 'randomChar', value: function randomChar()
-          {
-            return this.chars[Math.floor(Math.random() * this.chars.length)];
-          } }]);return TextScramble;}();
-      
-      
-      // ——————————————————————————————————————————————————
-      // Example
-      // ——————————————————————————————————————————————————
-      
-      var phrases = [
-      'Hacked By W4el',
-      'Team S.B.H',
-      'Salawaku BlackHat',
-      'System Tidak Aman'];
-      
-      
-      var el = document.querySelector('.text');
-      var fx = new TextScramble(el);
-      
-      var counter = 0;
-      var next = function next() {
-        fx.setText(phrases[counter]).then(function () {
-          setTimeout(next, 800);
-        });
-        counter = (counter + 1) % phrases.length;
-      };
-      
-      next();
-</script>
+<div class="bg">
+    <img id="dumetschool" src="https://i.imgur.com/iekvLZx.png" width="308px" height="300px">
+</div>
+<div class="typewriter">
+        <h3>Jangan Marah Kepada Kami..</h3>
+        <h3>Kami Hanya Meretas Website...</h3>
+        <h3>Dan Kami Hanya Mau Sampaikan Kepada Admin..</h3>
+	<h3>Bahwa Website Anda Tidak Aman.!</h3>
+</div>
+<br /><br /><br />
+<p class="microsoft marquee">
+<span style="color:#F65314">
+    <b>~ W4el | ./PejuangS.Pi | Prof.Nub ~</b>
+</span>
+</p>
+</center>
+</body>
 <script>
-  (function() {
+(function() {
   'use strict';
 
   function getRandomNumberInRange(minimum, maximum) {
@@ -193,39 +276,39 @@ body {
 
   createRain(250);
 }());
+
+$(".toggle").on("click", function () {
+$(".marquee").toggleClass("microsoft");
+});
 </script>
-<script src="http://www.script-tutorials.com/assets/ads.js" async></script>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
 <!-- mematikan fungsi klik kanan -->
 <script type="text/javascript">
-  function mousedwn(e) {
-      try {
-          if (event.button == 2 || event.button == 3) return false
-      } catch (e) {
-          if (e.which == 3) return false
-      }
-  }
-  document.oncontextmenu = function() {
-      return false
-  };
-  document.ondragstart = function() {
-      return false
-  };
-  document.onmousedown = mousedwn
+    function mousedwn(e) {
+        try {
+            if (event.button == 2 || event.button == 3) return false
+        } catch (e) {
+            if (e.which == 3) return false
+        }
+    }
+    document.oncontextmenu = function() {
+        return false
+    };
+    document.ondragstart = function() {
+        return false
+    };
+    document.onmousedown = mousedwn
 </script>
 
 <!-- mencegah shorcut keyboard, view source dll. -->
 <script type="text/javascript">
-  window.addEventListener("keydown", function(e) {
-      if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {
-          e.preventDefault()
-      }
-  });
-  document.keypress = function(e) {
-      if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {}
-      return false
-  }
+    window.addEventListener("keydown", function(e) {
+        if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {
+            e.preventDefault()
+        }
+    });
+    document.keypress = function(e) {
+        if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {}
+        return false
+    }
 </script>
-</body>
-
 </html>
